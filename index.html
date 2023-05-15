@@ -11,18 +11,14 @@
 
   <!-- Import Three.js using an import-map -->
   <script type="importmap">
-    {
-      "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@^0.152.1/build/three.module.min.js"
-      }
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@^0.150.0/build/three.module.js"
     }
-  </script>
-
-  <!-- Import the <model-viewer> component without three bundled -->
-  <script type="module" src="../../node_modules/@google/model-viewer/dist/model-viewer-module.js"></script>
-
-  <!-- Import the <model-viewer-effects> addon -->
-  <script type="module" src="../../node_modules/@google/model-viewer-effects/dist/model-viewer-effects.js"></script>
+  }
+</script>
+<script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-no-three.min.js "></script>
+<script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js "></script>
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
